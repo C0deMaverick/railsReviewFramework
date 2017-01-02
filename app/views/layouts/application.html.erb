@@ -18,13 +18,7 @@
         </div>
         <ul class="nav navbar-nav">
           
-          <% if user_signed_in?  %>
-            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %> </li>
-          <% else %>
-            <li><%= link_to "Sign Up", new_user_registration_path%></li>
-            <li><%= link_to "Login", new_user_session_path %></li> 
-
-          <% end %>
+          
         </ul>
 
         <ul class="nav navbar-nav pull-right">
@@ -41,9 +35,11 @@
           </li>
 
           <% if user_signed_in?  %>
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %> </li>
             <li><%= link_to "Review Something New", new_item_path%> </li>
           <% else %>
-            <li><%= link_to "Login", new_user_session_path %></li> 
+            <li><%= link_to "Sign Up", new_user_registration_path%></li>
+            <li><%= link_to "Log In", new_user_session_path %></li> 
           <% end %>
 
         </ul>
