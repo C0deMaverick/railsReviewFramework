@@ -389,6 +389,26 @@ p.alert, p.notice {
 
 }
 
+.btn-custom-2-auto {
+	color: darken(#f1c40f, 5%);
+	background-color: #fff;
+	border: 1px solid darken(#f1c40f, 5%);
+	padding: 8px 20px;
+	border-radius: 5px;
+	font-family: 'Ubuntu', sans-serif;
+	margin-top:30px;
+	margin-left:0px;
+	margin-bottom:30px;
+	&:hover {
+		text-decoration: none;
+		background-color: darken(#f1c40f, 5%);
+		color: #fff;
+		transition: 0.5s;
+	}
+
+}
+
+
 
 
 .btn-custom2-small {
