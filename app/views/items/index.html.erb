@@ -10,10 +10,12 @@
 		<div class="row">
 			<% @items.each do |item| %>
 				<div class="col-md-3" style="margin-top:15px;">
+				<div  style="background-color:white;">
 					<a href="/items/<%=item.id %>">
-						<%= image_tag item.item_img.url(:item_index), class: "index-item", style: "margin-bottom:10px;" %>
-						<h4 style="margin-top: 0px;"><strong><%= item.title %></strong><br> by <%= item.maker %> </h4>
+						<%= image_tag item.item_img.url(:item_index), class: "index-item", style: " margin-bottom:10px;" %>
+						<h4 style="margin-top: 0px; padding:15px; "><strong><%= item.title %></strong><br> by <%= item.maker %> </h4>
 					</a>
+				</div>
 				</div>
 			<% end %>
 		</div>	
