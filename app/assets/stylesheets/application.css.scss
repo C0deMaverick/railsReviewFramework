@@ -219,6 +219,18 @@ p.alert, p.notice {
 }
 
 
+.alert-custom {
+	font-size: 1.5em;
+	font-family: 'Ubuntu', sans-serif;
+	text-align:center;
+}
+
+.login-custom
+{
+	font-size: 1.5em;
+	font-family: 'Ubuntu', sans-serif;
+}
+
 /* current-category styles */
 
 .current-category {
@@ -358,6 +370,26 @@ p.alert, p.notice {
 	}
 
 }
+.btn-custom-auto {
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #222;
+	padding: 8px 20px;
+	border-radius: 5px;
+	font-family: 'Ubuntu', sans-serif;
+	margin-top:30px;
+	margin-left:0px;
+	margin-bottom:30px;
+	&:hover {
+		text-decoration: none;
+		background-color: darken(#f1c40f, 5%);
+		color: #fff;
+		transition: 0.5s;
+	}
+
+}
+
+
 
 .btn-custom2-small {
 	color: #333;
