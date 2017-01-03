@@ -15,3 +15,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+#Ignore the public/assets folder to avoid losing images on prod
+/public/items/*
