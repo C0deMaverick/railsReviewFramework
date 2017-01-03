@@ -1,7 +1,7 @@
 
 	<h1 class="current-category"><% if (params[:category] != nil) %>Category:  <%= params[:category] %><% end %></h1>
 	<% if @items.count == 0 %>
-		<% if (params[:category] != nil) %>Category:  <%= params[:category] %>
+		<% if (params[:category] != nil) %>
 			<h3>There are currently no items to review in this category. Click <a href="<%= new_item_path %>"><strong>Review Something New </strong> </a>to add the first!</h3>
 		<% else %>
 			<h3>There are currently no items to review. Click <a href="<%= new_item_path %>"><strong>Review Something New </strong> </a>to add the first!</h3>
