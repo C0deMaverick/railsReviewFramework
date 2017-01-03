@@ -1,16 +1,17 @@
-<h1 class="current-category">Category:  <%= params[:category] %></h1>
-<% if @items.count == 0 %>
-	<h3>There are currently no books in the category</h3>
-<% else %>
-	<div class="row">
-		<% @items.each do |item| %>
-			<div class="col-md-3">
-				<a href="/items/<%=item.id %>">
-					<%= image_tag item.item_img.url(:item_index), class: "index-item" %>
-				</a>
-			</div>
-		<% end %>
-	</div>	
-<% end %>
+
+	<h1 class="current-category"><% if (params[:category] != nil) %>Category:  <%= params[:category] %><% end %></h1>
+	<% if @items.count == 0 %>
+		<h3>There are currently no items to review in this category. Click <a href="<%= new_item_path %>"><strong>Review Something New </strong> </a>to add the first!</h3>
+	<% else %>
+		<div class="row">
+			<% @items.each do |item| %>
+				<div class="col-md-3">
+					<a href="/items/<%=item.id %>">
+						<%= image_tag item.item_img.url(:item_index), class: "index-item" %>
+					</a>
+				</div>
+			<% end %>
+		</div>	
+	<% end %>
 
 
