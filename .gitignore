@@ -19,3 +19,5 @@
 
 #Ignore the public/assets folder to avoid losing images on prod
 /public/system/items
+
+/config/aws.yml
